@@ -16,7 +16,7 @@
 .footer {
 	width: 100vw;
 	height: 100px;
-	background-color: grey;
+	background-color: #86888A;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -58,12 +58,49 @@
 	margin: 1rem 0 0 0;
 }
 
+.card {
+	border-radius: 9px;
+	border-style: solid;
+	border-color: #d3d3d3;
+	transition: all .2s ease-in-out;
+}
+
+.card:hover {
+	box-shadow: 1px 1px 3px 2px #eeeeee;
+	transform: scale(1.03);
+}
+
+.card-header {
+	background-color: white;
+}
+
 .grow { 
 	transition: all .2s ease-in-out; 
 }
 
 .grow:hover { 
 	transform: scale(1.1); 
+}
+
+.footerLink {
+	color: inherit;
+	text-decoration: none;
+}
+
+.footerLink:hover {
+	color: #eeeeee;
+	text-shadow: 1px 1px 3px #313335;
+	text-decoration: none;
+}
+
+.progress {
+	box-shadow: 1px 1px 3px black;
+	border-radius: 10px;
+	background-color: white;
+}
+
+.progress-bar {
+	background-color: #E8A87C;
 }
 
 h1 {
@@ -87,6 +124,10 @@ h3 {
 p {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 18pt;
+}
+
+a:hover {
+	cursor: pointer;
 }
 
 html {
